@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades.actividades.admin.ListarReservasADMIN_Activity">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="272dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="26dp"
+        android:text="LISTAR RESERVAS DE TODOS LOS CLIENTES"
+        android:textColor="#D1A41E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtvListadoRsvCLI_Admin"
+        android:layout_width="269dp"
+        android:layout_height="348dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="34dp"
+        android:text="Cargando...."
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnListarRsvCLI_Admin" />
+
+    <FrameLayout
+        android:id="@+id/frml_Carga"
+        android:layout_width="367dp"
+        android:layout_height="203dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnListarRsvCLI_Admin">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnSalir_ListaRsvCLI_Admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="13dp"
+        android:text="Salir"
+        app:layout_constraintStart_toEndOf="@+id/btnActualizar_ListaRsvCLI_Admin"
+        app:layout_constraintTop_toBottomOf="@+id/txtvMonto_Adm" />
+
+    <Button
+        android:id="@+id/btnActualizar_ListaRsvCLI_Admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="13dp"
+        android:text="ACTUALIZAR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvMonto_Adm" />
+
+    <Spinner
+        android:id="@+id/spnListarRsvCLI_Admin"
+        android:layout_width="305dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="259dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="12dp"
+        android:text="Seleccione una losa:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/txtvMonto_Adm"
+        android:layout_width="222dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="17dp"
+        android:text="Cargando..."
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvListadoRsvCLI_Admin" />
+</androidx.constraintlayout.widget.ConstraintLayout>

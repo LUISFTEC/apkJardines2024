@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".actividades.actividades.admin.ListarUsers_Admin_Activity">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="31dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="LISTAR USUARIOS"
+        android:textColor="#E11515"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtvListarUsers_Admin"
+        android:layout_width="309dp"
+        android:layout_height="203dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="17dp"
+        android:singleLine="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/btnRegresar_ListarUsersAdmn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="20dp"
+        android:text="REGRESAR"
+        app:cornerRadius="20dp"
+
+        android:backgroundTint="@color/btnRegOrange"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvListarUsers_Admin" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".actividades.actividades.usuario.BienvenidoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bieLblSaludo"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="@string/bieLblSaludo"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <fragment
+            android:id="@+id/frgMenu"
+            android:name="com.example.myproyect.actividades.fragmentos.menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_menu" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona una cancha de Futbol"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/actvbtnCerrar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="250dp"
+            android:backgroundTint="@color/btnRegOrange"
+
+            android:text="@string/bieBtnSalir"
+            android:textAllCaps="false"
+            android:textColorHint="@color/white"
+            tools:text="Cerrar sesión"></Button>
+
+        <Button
+            android:id="@+id/btnReservasRealizadas_User"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESERVAS REALIZADAS" />
+
+        <Button
+            android:id="@+id/btnActualizarDatos_BienvenidoActv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTUALIZAR DATOS" />
+
+        <Button
+            android:id="@+id/btnRealizarRsv_BienvenidoActy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REALIZAR RESERVA"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,7 +31,7 @@
     <string name="regTitulo">Registrate  Los Jardines</string>
     //registro
     <string name="regNombre">Nombre</string>
-    <string name="regApellido">Apellidos</string>
+    <string name="regApellido">Apellido</string>
     <string name="regTxtCorreo">Correo electrónico</string>
     <string name="regTxtClave">Clave</string>
     <string name="regFechaNac">Fecha de Nacimiento</string>
@@ -46,7 +46,7 @@
     //check
     <string name="regLblTerminos">Acepto los términos y condiciones</string>
     //botones
-    <string name="regContinuar">Continuar</string>
+    <string name="regContinuar">Registrarse</string>
     <string name="regRegresar">Regresar</string>
 
 

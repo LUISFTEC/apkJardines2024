@@ -30,7 +30,7 @@
             android:autofillHints=""
             android:hint="DNI"
             android:inputType="number"
-            android:maxLength="50"
+            android:maxLength="8"
             android:minHeight="45dp" />
 
 
@@ -64,7 +64,7 @@
             android:autofillHints=""
             android:hint="Celular"
             android:inputType="number"
-            android:maxLength="50"
+            android:maxLength="9"
             android:minHeight="48dp" />
 
         <RadioGroup

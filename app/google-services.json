@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "794932375882",
+    "project_id": "applosas",
+    "storage_bucket": "applosas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794932375882:android:c896114ad640c7fb8191b3",
+        "android_client_info": {
+          "package_name": "com.example.myproyect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEQMwsYwOjhgXU5Y4Te5K0fwMvAlE9LB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

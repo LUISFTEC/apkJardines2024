@@ -123,4 +123,15 @@
     <string name="YaConfirmar">Confirmar</string>
     <string name="YaRegresar">Regresar</string>
 
+    <!-- Cadenas para ActivityCrudLosas -->
+    <string name="nombre_de_la_losa">Nombre de la Losa</string>
+    <string name="descripcion_de_la_losa">Descripción de la Losa</string>
+    <string name="subir_foto">Subir Foto</string>
+    <string name="vista_previa_de_la_foto">Vista previa de la foto</string>
+    <string name="añadir_losa">Añadir Losa</string>
+    <string name="regresar">Regresar</string>
+
+    <!-- Cadenas para ActivityListaLosas -->
+    <string name="agregar_losa">Agregar Losa</string>
+
 </resources>

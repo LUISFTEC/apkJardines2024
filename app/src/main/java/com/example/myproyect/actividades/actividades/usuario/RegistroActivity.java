@@ -41,6 +41,7 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
         txtClave = findViewById(R.id.regTxtClave);
         txtCel = findViewById(R.id.regTxtCel);
 
+
         // Aplicar el filtro a los campos de texto
         txtNombre.setFilters(new InputFilter[]{ new NoLeadingSpaceFilter() });
         txtApellido.setFilters(new InputFilter[]{ new NoLeadingSpaceFilter() });

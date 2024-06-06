@@ -40,7 +40,7 @@ public class ActivityListaLosas extends AppCompatActivity {
         // Configurar RecyclerView
         rvLosas.setLayoutManager(new LinearLayoutManager(this));
         losaList = new ArrayList<>();
-        losaAdapter = new LosaAdapter(losaList);
+        losaAdapter = new LosaAdapter(this, losaList);
         rvLosas.setAdapter(losaAdapter);
 
         // Cargar losas desde Realtime Database
@@ -60,6 +60,7 @@ public class ActivityListaLosas extends AppCompatActivity {
                 losaList.clear();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Losa losa = snapshot.getValue(Losa.class);
+                    losa.setKey(snapshot.getKey()); // Establecer la clave aquí
                     losaList.add(losa);
                 }
                 losaAdapter.notifyDataSetChanged();
@@ -70,22 +71,5 @@ public class ActivityListaLosas extends AppCompatActivity {
                 // Manejar el error
             }
         });
-    }
-
-    // Clase Losa
-    public static class Losa {
-        public String nombre;
-        public String descripcion;
-        public String imageUrl;
-
-        public Losa() {
-            // Constructor vacío necesario para Firebase
-        }
-
-        public Losa(String nombre, String descripcion, String imageUrl) {
-            this.nombre = nombre;
-            this.descripcion = descripcion;
-            this.imageUrl = imageUrl;
-        }
     }
 }

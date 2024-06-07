@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 import com.example.myproyect.R;
-import com.example.myproyect.actividades.LosaAdapter;
+import com.example.myproyect.actividades.LosaAdapterCliente; // Cambiar el import para usar el nuevo adaptador
 import com.example.myproyect.actividades.Losa;
 import com.example.myproyect.actividades.actividades.Login_Activity;
 import com.example.myproyect.actividades.clases.InterfaceMenu;
@@ -27,7 +27,7 @@ public class BienvenidoActivity extends AppCompatActivity implements InterfaceMe
     TextView lblSaludo;
     Button btnSalida, btnReservar, btnActualizarDatos, btnConsultar;
     RecyclerView rvLosas;
-    LosaAdapter losaAdapter;
+    LosaAdapterCliente losaAdapter; // Usar el nuevo adaptador
     List<Losa> losaList;
     DatabaseReference databaseReference;
     Usuario usuario = Login_Activity.getUsuario();
@@ -46,7 +46,7 @@ public class BienvenidoActivity extends AppCompatActivity implements InterfaceMe
         rvLosas = findViewById(R.id.rv_losas_dinamicas);
         rvLosas.setLayoutManager(new LinearLayoutManager(this));
         losaList = new ArrayList<>();
-        losaAdapter = new LosaAdapter(this, losaList);
+        losaAdapter = new LosaAdapterCliente(this, losaList); // Usar el nuevo adaptador
         rvLosas.setAdapter(losaAdapter);
 
         databaseReference = FirebaseDatabase.getInstance().getReference("losas");

@@ -41,14 +41,25 @@
             android:textColor="@color/white"
             android:textSize="20sp" />
 
+        <!-- Agregar RecyclerView aquí -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_losas_dinamicas"
+            android:layout_width="match_parent"
+            android:layout_height="232dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            tools:listitem="@layout/item_losa" />
+
         <Button
             android:id="@+id/actvbtnCerrar"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="16dp"
             android:backgroundTint="@color/btnRegOrange"
-
             android:text="@string/bieBtnSalir"
             android:textAllCaps="false"
             android:textColorHint="@color/white"

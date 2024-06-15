@@ -209,8 +209,14 @@ public class TablaReservaUser_Activity extends AppCompatActivity {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
         updateChk(); //actualizar vista
 
-        Intent iPago= new Intent(this, PagoActivity.class);
-        startActivity(iPago);
+        //redireccion   a   pago
+
+        //Intent iPago= new Intent(this, PagoActivity.class);
+        //startActivity(iPago);
+
+        // Redirigir a BienvenidoActivity (en lugar de PagoActivity)
+        Intent intent = new Intent(TablaReservaUser_Activity.this, BienvenidoActivity.class);
+        startActivity(intent);
 
 
     }

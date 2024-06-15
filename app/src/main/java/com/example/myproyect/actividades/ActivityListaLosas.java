@@ -19,7 +19,7 @@ import java.util.List;
 public class ActivityListaLosas extends AppCompatActivity {
 
     private RecyclerView rvLosas;
-    private Button btnIrAgregarLosa;
+    private Button btnIrAgregarLosa, btnVolver;
     private FirebaseDatabase database;
     private DatabaseReference dbRef;
     private LosaAdapter losaAdapter;
@@ -36,6 +36,7 @@ public class ActivityListaLosas extends AppCompatActivity {
 
         rvLosas = findViewById(R.id.rv_losas);
         btnIrAgregarLosa = findViewById(R.id.btn_ir_agregar_losa);
+        btnVolver = findViewById(R.id.btn_volver);
 
         // Configurar RecyclerView
         rvLosas.setLayoutManager(new LinearLayoutManager(this));
@@ -51,6 +52,9 @@ public class ActivityListaLosas extends AppCompatActivity {
             Intent intent = new Intent(ActivityListaLosas.this, ActivityCrudLosas.class);
             startActivity(intent);
         });
+
+        // Acción del botón de volver
+        btnVolver.setOnClickListener(v -> finish());
     }
 
     private void cargarLosas() {

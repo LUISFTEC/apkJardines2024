@@ -28,6 +28,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
+        <!-- Nuevo botón para gestionar losas -->
+        <Button
+            android:id="@+id/btnGestionarLosas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GESTIONAR LOSAS" />
+
         <Button
             android:id="@+id/btnListarRsvUsers_MenuAdm"
             android:layout_width="match_parent"

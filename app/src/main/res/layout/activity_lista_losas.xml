@@ -15,18 +15,35 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btn_ir_agregar_losa" />
+        app:layout_constraintBottom_toTopOf="@id/btn_agregar_y_volver_layout" />
 
-    <!-- Botón para ir a la actividad de agregar una nueva losa -->
-    <Button
-        android:id="@+id/btn_ir_agregar_losa"
-        android:layout_width="wrap_content"
+    <!-- Contenedor para los botones en la parte inferior -->
+    <LinearLayout
+        android:id="@+id/btn_agregar_y_volver_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Agregar Losa"
-        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp">
+
+        <!-- Botón para volver -->
+        <Button
+            android:id="@+id/btn_volver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:padding="16dp" />
+
+        <!-- Botón para ir a la actividad de agregar una nueva losa -->
+        <Button
+            android:id="@+id/btn_ir_agregar_losa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Losa"
+            android:padding="16dp"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
